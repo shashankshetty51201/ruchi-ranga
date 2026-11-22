@@ -2,7 +2,7 @@
 const WA="919353009622",ADDR="6, 7th Main Rd, opposite MSR Boys Home, M S Ramaiah Nagar, Mathikere, Bengaluru 560054";
 const $=s=>document.querySelector(s),R=matchMedia("(prefers-reduced-motion:reduce)").matches;
 const wa=t=>`https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
-const TRUCK="images/truck.webp";document.querySelectorAll("[data-truck]").forEach(i=>i.src=TRUCK);
+const TRUCK="truck.webp";document.querySelectorAll("[data-truck]").forEach(i=>i.src=TRUCK);
 $("#yr").textContent=new Date().getFullYear();
 ["waHero","waVisit","waFab"].forEach(i=>$("#"+i).href=wa("Hi Ruchi Ranga, I’d like to place an order."));
 $("#waCater").href=wa("Hi Ruchi Ranga, I’d like to enquire about catering for an event.");
